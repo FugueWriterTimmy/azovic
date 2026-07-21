@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шхумбінадс Муриданжюйхес | Azovic Language Organization</title>
+    <style>
+        /* CSS Reset & Variables */
+        * {
+            margin: 0;
+            padding: 0;
+            box-box-sizing: border-box;
+        }
+
+        :root {
+            --color-sand: #D09B5D;
+            --color-espresso: #2F251E;
+            --color-slate: #8E9AAF;
+            --color-bg-light: #FBF9F6;
+            --color-text-dark: #231C17;
+            --color-text-muted: #564E48;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--color-bg-light);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+        }
+
+        /* ─── THE AZOVIC FLAG HEADER ─── */
+        .flag-header {
+            width: 100%;
+            height: 24px; /* Total thickness of the flag banner */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flag-stripe {
+            flex: 1;
+            width: 100%;
+        }
+
+        .stripe-sand { background-color: var(--color-sand); }
+        .stripe-espresso { background-color: var(--color-espresso); }
+        .stripe-slate { background-color: var(--color-slate); }
+
+        /* Navigation */
+        navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(47, 37, 30, 0.05);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-espresso);
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-text-muted);
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-sand);
+        }
+
+        /* Hero / Introduction Section */
+        .hero {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--color-espresso);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .hero .subtitle {
+            font-size: 1.25rem;
+            color: var(--color-sand);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+        }
+
+        /* Language Description Section */
+        .language-section {
+            background-color: #ffffff;
+            border-top: 4px solid var(--color-espresso);
+            border-bottom: 4px solid var(--color-slate);
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--color-espresso);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--color-sand);
+        }
+
+        .placeholder-text {
+            color: var(--color-text-dark);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Call to Action Cards */
+        .grid-section {
+            max-width: 1100px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 4px;
+            border-left: 5px solid var(--color-slate);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+        }
+
+        .card h3 {
+            color: var(--color-espresso);
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-espresso);
+            color: var(--color-slate);
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-top: 5rem;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-endonym {
+            color: var(--color-sand);
+            font-weight: bold;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            navbar { flex-direction: column; gap: 1rem; }
+            .nav-links { gap: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. THREE STRIPES OF THE FLAG AT THE TOP -->
+    <div class="flag-header">
+        <div class="flag-stripe stripe-sand"></div>
+        <div class="flag-stripe stripe-espresso"></div>
+        <div class="flag-stripe stripe-slate"></div>
+    </div>
+
+    <!-- 2. NAVIGATION -->
+    <nav>
+        <navbar>
+            <div class="nav-logo">ШМ</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#language">The Language</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </navbar>
+    </nav>
+
+    <!-- 3. HERO / WELCOME -->
+    <header class="hero" id="about">
+        <h1>Шхумбінадс Муриданжюйхес</h1>
+        <div class="subtitle">The AzovIc Language OrganIzatIon</div>
+        <p style="max-width: 600px; margin: 0 auto; color: var(--color-text-muted);">
+            Dedicated to the preservation, documentation, and propagation of the Azovic language
+        </p>
+    </header>
+
+    <!-- 4. LANGUAGE DESCRIPTION SECTION -->
+    <section class="language-section" id="language">
+        <div class="container">
+            <h2 class="section-title">The Azovic Language</h2>
+            
+            <!-- Placeholder section for you to edit -->
+            <p class="placeholder-text">
+                The Azovic language (Муриданжва̄хс) is an ancient and conservative Indo-European language spoken around its namesake Sea of Azov and in the northern Caucasus region. It is famous for having by far the most complex grammar of any natural language, with a single verb being able to generate well over 68 million conjugated forms. Azovic has 3 significantly different dialects, but the most widespread - and officially used - is Central Azovic, which you will see on this website. It is spoken by practically every Azovian, as opposed to its Northern and Southern counterparts.
+            </p>
+            <p class="placeholder-text">
+                Central Azovic uses a modified version of the Cyrillic script with 34 letters due to the long-lasting influence from its East Slavic neighbors. The northern dialect has more letters, whereas the southern dialect primarily uses a modified Mkhedruli (Georgian) script.
+            </p>
+            
+        </div>
+    </section>
+
+    <!-- 5. ADDITIONAL ORGANIZATIONAL BLOCKS -->
+    <section class="grid-section" id="resources">
+        <div class="card">
+            <h3>📚 Alphabet & Pronunciation</h3>
+            <p>Learn the fundamental orthographic and phonological system used to write and speak Central Azovic</p>
+        </div>    
+        <div class="card">
+            <h3>📖 Lexicon & Grammar</h3>
+            <p>Access our dictionary databases and detailed grammatical documents</p>
+        </div>
+        <div class="card" style="border-left-color: var(--color-sand);">
+            <h3>🌾 History</h3>
+            <p>Explore the deep connections between the language, its speakers, and neighboring peoples</p>
+        </div>
+    </section>
+
+    <!-- 6. FOOTER -->
+    <footer>
+        <p class="footer-endonym">Шхумбінадс Муриданжюйхес</p>
+        <p>&copy; 2026 Azovic Language Organization. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
