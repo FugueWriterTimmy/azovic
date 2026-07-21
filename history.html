@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>History | МШ</title><style>
+:root{--s:#D09B5D;--e:#2F251E;--l:#8E9AAF;--b:#FBF9F6}
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+body{background:var(--b);color:#231C17;line-height:1.5}
+.f{width:100%;height:24px;display:flex;flex-direction:column}
+.s1{background:var(--s);flex:1}.s2{background:var(--e);flex:1}.s3{background:var(--l);flex:1}
+nav{background:#fff;padding:1rem;display:flex;justify-content:space-between;box-shadow:0 2px 4px rgba(0,0,0,0.05)}
+a{text-decoration:none;color:#564E48;font-weight:600;margin-left:1rem}
+.c{max-width:800px;margin:0 auto;padding:2rem 1rem}
+.geo-block{background:#fff;padding:2rem;border-radius:4px;border-left:5px solid var(--e);border-bottom:3px solid var(--l);box-shadow:0 4px 6px rgba(0,0,0,0.01);margin-top:2rem}
+p{color:#4A413A;margin-bottom:1.5rem;font-size:1.05rem;text-align:justify}
+p:last-child{margin-bottom:0}
+
+/* ─── NEW FLAG WRAPPER GRID ─── */
+.layout-container {
+    display: grid;
+    grid-template-columns: 1fr 260px; /* Text takes left, Flag takes 260px right */
+    gap: 1.5rem;
+    align-items: start;
+}
+.flag-box {
+    border: 3px solid var(--e); /* Custom border utilizing your espresso value */
+    background: #fff;
+    padding: 6px;
+    border-radius: 4px;
+}
+.flag-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Fallback stacking layout for mobile phone screens */
+@media (max-width: 650px) {
+    .layout-container { grid-template-columns: 1fr; }
+}
+
+footer{background:var(--e);color:var(--l);text-align:center;padding:1.5rem;margin-top:4rem}
+</style></head><body>
+<div class="f"><div class="s1"></div><div class="s2"></div><div class="s3"></div></div>
+<nav><a href="./index.html" style="color:var(--e);margin:0;font-weight:700">МШ</a><div><a href="./index.html">Home</a><a href="./alphabet.html">Alphabet</a><a href="./grammar.html">Grammar</a></div></nav>
+<main class="c">
+    <h1 style="color:var(--e)">History</h1><div style="color:var(--s);letter-spacing:1px;font-size:.85rem;font-weight:700;text-transform:uppercase">The Azovic Homeland</div>
+    
+    <div class="geo-block">
+        <p>The homeland of the Azovic language is permanently anchored to the unique shores of its namesake body of water, the Sea of Azov—historically known as the Maeotian Marshes. As the shallowest sea on Earth, reaching a maximum depth of mere meters, this enclosed northern extension of the Black Sea possesses an exceptionally low salinity due to the massive freshwater influx from the Don and Kuban river systems. This brackish environment creates a highly unstable, milk-green maritime ecosystem bounded by low-lying lagoons, fine sandy spits, and wide, marshy estuaries that frozen over completely during the brutal winter months, separating the region from open Mediterranean trade routes and fostering unique communal isolation.</p>
+        
+        <!-- ─── SECOND PARAGRAPH WITH FLAG POSITIONING ─── -->
+        <div class="layout-container">
+            <p>The flag of Azovia is unique and recognizable, with its top butternut tree color symbolizing the fur of horses that were and still are central to the culture of the Azovians and their ancestors. The slightly light black in the middle symbolizes the nation's strength and resilience, which is reflected in the language, as it has retained almost all features of Proto-Indo-European, its ancestor. Finally, the faded blue at the bottom represents the Azov Sea, the namesake of the country, people, and language.</p>
+            
+            <div class="flag-box">
+                <img src="./flag.png" alt="Flag of Azovic">
+            </div>
+        </div>
+    </div>
+</main>
+<footer><b style="color:var(--s)">Муриданжвеяхшхумбінадс</b></footer>
+</body></html>
